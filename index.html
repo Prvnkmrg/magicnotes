@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <style>
+        .container{
+            min-height: 64vh;
+            max-width: 80vw;
+            margin: auto;
+            /* background-color: blueviolet; */
+            border-radius: 5px;
+            box-shadow: 0 0 15px blueviolet;
+            /* text-align: center; */
+
+        }
+        .container h1{
+            font-size: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-shadow: 0 0 10px blueviolet;
+            color: blueviolet;
+        }
+        .container .texrt{
+            width: 100%;
+            
+        }
+        .container .texrt textarea{
+            width:100%;
+            box-sizing: border-box;
+           max-height: 200px;
+        }
+        .h2{
+            color: blueviolet;
+            text-shadow:0 0 8px blueviolet;
+            
+        }
+        .name:hover{
+              border: 2px solid black;
+              border-radius: 4px;
+        }
+        .btn-primary{
+            height:40px;
+            background-color:transparent;
+            width: 100px;
+            color: blue;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+            border-radius: 4px;
+        }
+        .max{
+          min-height: 80px;
+          width: 250px;
+          box-shadow: 0 0 3px blueviolet;
+          /* border: 2px solid blue; */
+          border-radius: 4px;
+          text-align: center;
+          transition: all 0.6s ease;
+        }
+        
+       .max .manu{
+            color: blue;
+            text-shadow:0 0 15px greenyellow;
+            
+        }
+        .row{
+            display: flex;
+            justify-content: space-around;
+           
+        }
+        .max .guru{
+           margin-bottom: 4px;
+        }
+        .money{
+            text-align: center;
+            /* text-decoration: 0 0 10px black; */
+        }
+        .max:hover{
+            box-shadow: 0 0 15px  black;
+        }
+        nav{
+            background-color: rgb(138, 40, 230);
+            color: white;
+        }
+       
+     
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="#" style="color:white;">Magic Notes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" style="color:rgba(214, 211, 211, 0.87) ;">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html" style="color:rgba(226, 223, 223, 0.839) ;">refresh<span class="sr-only">(current)</span></a>
+            </li>
+            
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" id="searchtxt" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+      <div class="container my-3"> 
+        <h1 style="text-align:center;">WellCome To magic notes</h1>
+           <div class="texrt">
+            <h2 class="h2"> Add your notes </h2>
+            <textarea class="name" id="addtxt" column="30" rows="10"></textarea>
+           </div>
+             <button type="submit" id="addbtn" class="btn-primary " style="margin-top: 60px;">Add note</button>
+            
+      </div>
+      <div class="container" style="min-height:30px;">
+      <h1 class="money" style="color:blueviolet;">your notes are</h1>
+
+        <div class="row my-3" id="row">
+            
+        </div>
+      </div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</html>
